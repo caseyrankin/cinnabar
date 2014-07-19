@@ -4,7 +4,7 @@ module Cinnabar
       @page_content_used = true
       # prefix db key with controller/action names to sorta help with uniqueness
       content_name = [controller_name, action_name, content_name.underscore].join('_').to_sym
-      content = Cinnabar::PageContent[content_name].try(:html_safe)
+      content = Cinnabar::Content[content_name].try(:html_safe)
       # use html inside block if record does not exist
       content = capture(&block).html_safe if block_given? && content.nil?
       content_tag(tag_type, content, data: { mercury: mercury_type }, id: content_name)

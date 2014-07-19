@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cinnabar (0.0.1)
+    cinnabar (0.0.2)
       mercury-rails (~> 0.9.0)
       rails (~> 3.2.14)
 
@@ -106,5 +106,4 @@ PLATFORMS
 DEPENDENCIES
   cinnabar!
   jquery-rails
-  mercury-rails
   sqlite3

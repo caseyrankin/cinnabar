@@ -1,3 +1,20 @@
 = Cinnabar
 
 This project rocks and uses MIT-LICENSE.
+
+= Installation
+
+gem 'cinnabar'
+
+Run the migrations
+rake cinnabar_engine:install:migrations
+rake db:migrate
+
+Inside your routes files
+Mount Cinnabar::Engine => '/'
+
+Inside your layout
+= render partial: 'cinnabar_edit_link'
+
+Inside your application.css.scss
+@import 'cinnabar/cinnabar'

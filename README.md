@@ -1,5 +1,7 @@
 # Cinnabar
 
+A simple rails backend for: http://jejacks0n.github.io/mercury/
+
 ## Installation
 
 ```ruby
@@ -34,7 +36,7 @@ Inside your app/views/*.html.slim
   | Default title here
 ```
 
-This creates a named content section ('title'), which is an <h1> tag, and also contains the default text 'Default title here' until a database record is saved
+This creates a named content section ('title'), an h1 tag, and also contains the default text 'Default title here' until a database record is saved
 with new editable content.
 
 ## License

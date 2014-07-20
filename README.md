@@ -26,7 +26,8 @@ Inside your application.css.scss
 @import 'cinnabar/cinnabar';
 ```
 
-== License
+## Usage
+
+## License
 
 This project rocks and uses MIT-LICENSE.
-

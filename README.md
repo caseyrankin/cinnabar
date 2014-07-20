@@ -8,11 +8,12 @@ A simple rails backend for: http://jejacks0n.github.io/mercury/
 gem 'cinnabar'
 ```
 
-Run the migrations
+install & run migration
 ```shell
 rake cinnabar_engine:install:migrations
 rake db:migrate
 ```
+
 config/routes.rb
 ```ruby
 Mount Cinnabar::Engine => '/'
@@ -23,21 +24,34 @@ app/views/layouts/application.html.slim
 = render partial: 'cinnabar_edit_link'
 ```
 
-Inside your application.css.scss
+application.css.scss
 ```scss
 @import 'cinnabar/cinnabar';
 ```
 
 ## Usage
 
-Inside your app/views/*.html.slim
 ```ruby
-= liquid 'title', tag: 'h1' do
-  | Default title here
+= liquid 'title'
+```
+generates
+
+```html
+<span id="controller_action_title" data-mercury="full"></span>
 ```
 
-This creates a named content section ('title'), an h1 tag, and also contains the default text 'Default title here' until a database record is saved
-with new editable content.
+tag and mercury editor type can be customized by passing in an options hash
+
+```ruby
+= liquid 'title', tag: 'h1', mercury_type: 'markdown'
+```
+
+also accepts a block, which will act as the default content until the block is edited
+
+```ruby
+= liquid 'title' do
+  | default title text here
+```
 
 ## License
 

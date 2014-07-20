@@ -1,8 +1,6 @@
 = Cinnabar
 
-This project rocks and uses MIT-LICENSE.
-
-= Installation
+== Installation
 
 gem 'cinnabar'
 
@@ -14,7 +12,12 @@ Inside your routes files
 Mount Cinnabar::Engine => '/'
 
 Inside your layout
-= render partial: 'cinnabar_edit_link'
+<%= render partial: 'cinnabar_edit_link' %>
 
 Inside your application.css.scss
 @import 'cinnabar/cinnabar'
+
+== License
+
+This project rocks and uses MIT-LICENSE.
+

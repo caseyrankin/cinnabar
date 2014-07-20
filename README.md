@@ -28,6 +28,15 @@ Inside your application.css.scss
 
 ## Usage
 
+Inside your app/views/*.html.slim
+```ruby
+= liquid 'title', tag: 'h1' do
+  | Default title here
+```
+
+This creates a named content section ('title'), which is an <h1> tag, and also contains the default text 'Default title here' until a database record is saved
+with new editable content.
+
 ## License
 
 This project rocks and uses MIT-LICENSE.

@@ -1,21 +1,30 @@
-= Cinnabar
+# Cinnabar
 
-== Installation
+## Installation
 
+```ruby
 gem 'cinnabar'
+```
 
 Run the migrations
+```shell
 rake cinnabar_engine:install:migrations
 rake db:migrate
-
-Inside your routes files
+```
+config/routes.rb
+```ruby
 Mount Cinnabar::Engine => '/'
+```
 
-Inside your layout
-<%= render partial: 'cinnabar_edit_link' %>
+app/views/layouts/application.html.slim
+```ruby
+= render partial: 'cinnabar_edit_link'
+```
 
 Inside your application.css.scss
-@import 'cinnabar/cinnabar'
+```scss
+@import 'cinnabar/cinnabar';
+```
 
 == License
 

@@ -13,6 +13,11 @@ html
       // Set to the url that you want to save any given page to, leave null for default handling.
       var saveUrl = '/contents';
 
+      window.Mercury.config.toolbars.primary.insertMedia = '';
+      window.Mercury.config.toolbars.primary.historyPanel = '';
+      window.Mercury.config.toolbars.primary.notesPanel = '';
+      window.Mercury.config.toolbars.primary.snippetPanel = '';
+
       // Instantiate the PageEditor
       new Mercury.PageEditor(saveUrl, {
         saveStyle:  null, // 'form', or 'json' (default json)

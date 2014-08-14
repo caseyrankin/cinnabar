@@ -1,4 +1,6 @@
-$cinnabar-editor-bg: lemonchiffon
+@mixin cinnabar-link-bg($color)
+  background: $color
+  border-top: 1px solid darken($color, 20%)
 
 .editor-link
   bottom: 0
@@ -7,15 +9,19 @@ $cinnabar-editor-bg: lemonchiffon
   width: 100%
   z-index: 9999
 
-  border-top: 1px solid darken($cinnabar-editor-bg, 20%)
-  background: $cinnabar-editor-bg
-  text-align: center
-
   a
+    @include cinnabar-link-bg(lightskyblue)
     color: #222
     display: block
     font-weight: bold
-    padding: 0.8em 0
+    padding: 0.9em 0
+    text-align: center
+
+    span
+      padding-left: 1em
+      visibility: hidden
     &:hover
-      background: orange
+      @include cinnabar-link-bg(lemonchiffon)
       text-decoration: none
+      span
+        visibility: visible

@@ -26,7 +26,9 @@ module Cinnabar
 
     def edit_link
       if show_edit_link?
-        content_tag(:div, link_to('This page has editable content, click here to edit', '/editor' + request.path), class: 'editor-link')
+        content_tag(:div,
+                    link_to('Edit the content on this page <span>&crarr;</span>'.html_safe, '/editor' + request.path),
+                    class: 'editor-link')
       end
     end
   end

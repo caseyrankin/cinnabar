@@ -4,11 +4,6 @@ delete window.Mercury.config.toolbars.primary.historyPanel
 delete window.Mercury.config.toolbars.primary.notesPanel
 delete window.Mercury.config.toolbars.primary.snippetPanel
 
-# attempt to add a cancel button
-window.Mercury.config.toolbars.primary.cancelOut = ['Cancel', 'Leave editor without saving changes', { regions: ['full', 'markdown', 'simple'] }];
-window.Mercury.config.globalBehaviors.cancelOut = ->
-  Mercury.trigger 'action', { action: 'exit' }
-
 # Not sure why mercury does not automatically exit after save ?
 $(window).on 'mercury:saved', ->
   Mercury.trigger 'action', { action: 'exit' }

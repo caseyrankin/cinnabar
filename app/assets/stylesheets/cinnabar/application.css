@@ -10,5 +10,6 @@
  *
  *= require mercury
  *= require cinnabar/mercury
- *= require cinnabar/extend
+ *= require cinnabar/cancel
+ *= require cinnabar/customize
  */

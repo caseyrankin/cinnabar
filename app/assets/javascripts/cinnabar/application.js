@@ -12,5 +12,10 @@
 //
 //= require jquery-1.7
 //= require mercury
-//= require cinnabar/extend
+//
+//= require cinnabar/toolbar
+//= require cinnabar/cancel
+//
+// customize first, then initializer so engine users can override behavior
+//= require cinnabar/customize
 //= require cinnabar/initializer

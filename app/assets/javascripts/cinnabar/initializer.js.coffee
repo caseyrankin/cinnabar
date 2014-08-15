@@ -1,5 +1,4 @@
 # panels that we have not implemented backends for
-delete window.Mercury.config.toolbars.primary.insertMedia
 delete window.Mercury.config.toolbars.primary.historyPanel
 delete window.Mercury.config.toolbars.primary.notesPanel
 delete window.Mercury.config.toolbars.primary.snippetPanel

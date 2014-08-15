@@ -1,8 +1,8 @@
 # panels that we have not implemented backends for
-window.Mercury.config.toolbars.primary.insertMedia = ''
-window.Mercury.config.toolbars.primary.historyPanel = ''
-window.Mercury.config.toolbars.primary.notesPanel = ''
-window.Mercury.config.toolbars.primary.snippetPanel = ''
+delete window.Mercury.config.toolbars.primary.insertMedia
+delete window.Mercury.config.toolbars.primary.historyPanel
+delete window.Mercury.config.toolbars.primary.notesPanel
+delete window.Mercury.config.toolbars.primary.snippetPanel
 
 # attempt to add a cancel button
 window.Mercury.config.toolbars.primary.cancelOut = ['Cancel', 'Leave editor without saving changes', { regions: ['full', 'markdown', 'simple'] }];

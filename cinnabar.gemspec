@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.2.14"
   s.add_dependency "mercury-rails", "~> 0.9.0"
   s.add_dependency "codemirror-rails"
-  #s.add_dependency "nokogiri"
 
   s.add_development_dependency "sqlite3"
 end

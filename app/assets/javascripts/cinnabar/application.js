@@ -13,6 +13,8 @@
 //= require jquery-1.7
 //= require mercury
 //
+//= require codemirror
+//
 //= require cinnabar/toolbar
 //= require cinnabar/cancel
 //

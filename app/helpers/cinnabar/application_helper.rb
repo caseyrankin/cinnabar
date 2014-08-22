@@ -1,5 +1,7 @@
 module Cinnabar
   module ApplicationHelper
+    include Cinnabar::Authentication
+
     def cinnabar_prepend_path(path)
       @prepend_path = path
     end
@@ -21,7 +23,7 @@ module Cinnabar
     end
 
     def show_edit_link?
-      !params[:mercury_frame] && @page_content_used
+      params[:mercury_frame].nil? && @page_content_used && has_edit_permissions?
     end
 
     def edit_link

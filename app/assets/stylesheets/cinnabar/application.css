@@ -9,7 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require mercury
+ *
  *= require cinnabar/mercury
  *= require cinnabar/cancel
  *= require cinnabar/customize
+ *
+ *= require codemirror
  */

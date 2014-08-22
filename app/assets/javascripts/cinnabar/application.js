@@ -14,6 +14,11 @@
 //= require mercury
 //
 //= require codemirror
+//= require codemirror/modes/xml
+//= require codemirror/modes/htmlmixed
+//= require codemirror/modes/javascript
+//= require codemirror/modes/ruby
+//= require codemirror/modes/haml
 //
 //= require cinnabar/toolbar
 //= require cinnabar/cancel

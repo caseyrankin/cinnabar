@@ -19,9 +19,11 @@
 //= require codemirror/modes/javascript
 //= require codemirror/modes/ruby
 //= require codemirror/modes/haml
+//= require codemirror/util/formatting
 //
-//= require cinnabar/toolbar
 //= require cinnabar/cancel
+//= require cinnabar/codemirror
+//= require cinnabar/toolbar
 //
 // customize first, then initializer so engine users can override behavior
 //= require cinnabar/customize

@@ -1,7 +1,7 @@
 # what a shitty hack to initialize this
 Mercury.on 'action', (event, data) ->
   if data.action == 'htmlEditor'
-    setTimeout initialize_codemirror, 500
+    setTimeout initialize_codemirror, 750
 
 initialize_codemirror = ->
   editor = CodeMirror.fromTextArea $('#mercury_html_editor textarea').get(0),
